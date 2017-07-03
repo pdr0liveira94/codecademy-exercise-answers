@@ -22,7 +22,7 @@ ship_col = random_col(board)
 guess_row = int(raw_input("Guess Row:"))
 guess_col = int(raw_input("Guess Col:"))
 
-if guess_row >= 0 or guess_row <= len(board) or guess_col >= 0 or guess_col <= len(board[0]):
+if guess_row >= 0 and guess_row <= len(board) or guess_col >= 0 and guess_col <= len(board[0]):
     if ship_row == guess_row and ship_col == guess_col:
         print "Congratulations! You sank my battleship!"
     else:
